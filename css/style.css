@@ -113,6 +113,25 @@ ul {
   gap: 40px;
 }
 
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(64, 75, 191, 1);
+  position: absolute;
+  top: 25px;
+  opacity: 0;
+}
+
+nav a:active::after {
+  opacity: 1;
+}
+
 a {
   text-decoration: none;
 }
