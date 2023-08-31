@@ -352,3 +352,36 @@ section ul {
 img {
   display: block;
 }
+
+/* .img-card {
+  position: relative;
+} */
+
+.hidden-text {
+  /* display: none; */
+}
+
+.products li .img-card {
+  position: relative;
+}
+
+.products li .img-card:hover::after {
+  position: absolute;
+  content: "";
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.8;
+ 
+}
+
+.products li .hidden-text::after {
+  /* display: block; */
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgb(17, 68, 237);
+  color: white;
+ 
+}
