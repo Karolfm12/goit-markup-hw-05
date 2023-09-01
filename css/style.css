@@ -363,25 +363,22 @@ img {
 
 .products li .img-card {
   position: relative;
+  overflow: hidden;
 }
 
-.products li .img-card:hover::after {
-  position: absolute;
-  content: "";
-  background-color: blue;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.8;
- 
-}
-
-.products li .hidden-text::after {
-  /* display: block; */
-  content: "";
+.products .img-card .hidden-text {
   position: absolute;
   top: 0;
+  left: 0;
   background-color: rgb(17, 68, 237);
   color: white;
- 
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.img-card:hover .hidden-text {
+  transform: translateY(0);
 }
