@@ -399,6 +399,8 @@ img {
 
   width: 400px;
   height: 400px;
+  transform: scale(2);
+  transition-duration: 500ms;
 }
 
 .is-hidden {
