@@ -76,17 +76,17 @@ img {
   letter-spacing: 0.02em;
   color: #404bbf;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navlink::after {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -1;
+  bottom: -1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adreslink {
@@ -273,6 +273,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sociallink:hover,
@@ -303,6 +304,8 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--linkiconcolor);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customerlink:hover,
@@ -341,6 +344,7 @@ img {
   display: flex;
   /* display: inline-block;
   margin-bottom: 16px; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .sociallink:hover,
